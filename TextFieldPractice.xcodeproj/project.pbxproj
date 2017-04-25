@@ -13,6 +13,7 @@
 		8F9081441EAF817C0087D93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9081431EAF817C0087D93C /* Assets.xcassets */; };
 		8F9081471EAF817C0087D93C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9081451EAF817C0087D93C /* LaunchScreen.storyboard */; };
 		8F90814F1EAF836C0087D93C /* ZipDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90814E1EAF836C0087D93C /* ZipDelegate.swift */; };
+		8F9081511EAF845E0087D93C /* CashTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9081501EAF845E0087D93C /* CashTextDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8F9081461EAF817C0087D93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F9081481EAF817C0087D93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F90814E1EAF836C0087D93C /* ZipDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipDelegate.swift; sourceTree = "<group>"; };
+		8F9081501EAF845E0087D93C /* CashTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8F9081451EAF817C0087D93C /* LaunchScreen.storyboard */,
 				8F9081481EAF817C0087D93C /* Info.plist */,
 				8F90814E1EAF836C0087D93C /* ZipDelegate.swift */,
+				8F9081501EAF845E0087D93C /* CashTextDelegate.swift */,
 			);
 			path = TextFieldPractice;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9081511EAF845E0087D93C /* CashTextDelegate.swift in Sources */,
 				8F90813F1EAF817C0087D93C /* ViewController.swift in Sources */,
 				8F90814F1EAF836C0087D93C /* ZipDelegate.swift in Sources */,
 				8F90813D1EAF817C0087D93C /* AppDelegate.swift in Sources */,

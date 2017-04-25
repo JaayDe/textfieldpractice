@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var allowEditingSwitch: UISwitch!
     
     let zipCodeDelegate = ZipDelegate()
+    let cashTextDelegate = CashTextDelegate()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
