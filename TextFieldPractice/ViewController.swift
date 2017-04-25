@@ -8,18 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var zipCodeLabel: UITextField!
+    
+    @IBOutlet weak var editingAllowdIfSwitchOnLabel: UITextField!
+    
+    @IBOutlet weak var allowEditingSwitch: UISwitch!
+    
+    let zipCodeDelegate = ZipDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.zipCodeLabel.delegate = zipCodeDelegate
+        self.editingAllowdIfSwitchOnLabel.delegate = self
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if allowEditingSwitch.isOn {
+            return true
+        } else {
+            return false
+        }
     }
-
-
+    
 }
+
 
