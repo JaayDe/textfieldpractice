@@ -16,19 +16,24 @@ class CashTextDelegate: NSObject, UITextFieldDelegate {
     
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        
         textField.text = "$ 0.00"
-        
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if Int(string) != nil || (string == "") {
             
-            updatedText = updatedText.appending(string)
+            if updatedText.characters.count > 0 && string == "" {
+                updatedText.characters.popLast()
+            } else {
+                updatedText = updatedText.appending(string)
+            }
+            
             let charsInText = updatedText.characters.count
             
             switch charsInText {
+            case 0:
+                textField.text = "$ 0.00"
             case 1:
                 textField.text = "$ 0.0" + updatedText
             case 2:
