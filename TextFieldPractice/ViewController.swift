@@ -16,6 +16,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var allowEditingSwitch: UISwitch!
     
+    @IBOutlet weak var cashLabel: UITextField!
+    
+    
     let zipCodeDelegate = ZipDelegate()
     let cashTextDelegate = CashTextDelegate()
     
@@ -25,7 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         self.zipCodeLabel.delegate = zipCodeDelegate
         self.editingAllowdIfSwitchOnLabel.delegate = self
-        
+        self.cashLabel.delegate = cashTextDelegate
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

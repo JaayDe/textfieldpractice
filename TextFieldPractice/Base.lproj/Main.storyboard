@@ -66,6 +66,7 @@
                     </view>
                     <connections>
                         <outlet property="allowEditingSwitch" destination="xHN-yu-l2i" id="Nq9-wv-0TW"/>
+                        <outlet property="cashLabel" destination="tS6-8W-aEA" id="WVd-fI-fPc"/>
                         <outlet property="editingAllowdIfSwitchOnLabel" destination="ZHU-BH-Pd0" id="yip-56-WWD"/>
                         <outlet property="zipCodeLabel" destination="PpC-7g-fkM" id="k9g-ZM-YQY"/>
                     </connections>
